@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace ConsoleApp8
@@ -139,27 +140,42 @@ namespace ConsoleApp8
             else
             {
                 listaverde.RemoveAt(0);
-                  
-                 
-
-               
-
-
-
-
-
-
-
-
-
-
-
-
 
             }
         }
+               public void  verificachamada()
+               { 
+                 listarpaciente();
+                 int i = 0;
+            foreach (var nome in listapaciente)
+
+            {
+                Console.WriteLine($"{i} -{nome}");
+                i++;
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+        }
     }
-}
+
 
 
 
